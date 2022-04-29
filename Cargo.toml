@@ -1,0 +1,16 @@
+[package]
+name = "sceneify"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+    "derive"
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+obws = { git = "https://github.com/dnaka91/obws.git", branch = "v5-api" }
+sceneify-derive = { path = "./derive" }
+tokio = "1.17.0"
